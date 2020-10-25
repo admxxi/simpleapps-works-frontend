@@ -10,37 +10,34 @@
           transition="scale-transition"
           width="40"
         />
-
+        
         <h2>Simple Apps</h2>
       </div>
-
+      
       <v-spacer></v-spacer>
-
+      
       <span>
         <span class="mr-2">Version 0.1.0 Beta</span>
         <v-icon>code</v-icon>
       </span>
     </v-app-bar>
-    <v-main> </v-main>
+    <v-main></v-main>
     <BottomNav />
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
 import TopToolbar from '@/components/TopToolbar.vue'
 import BottomNav from '@/components/BottomNav.vue'
 
 export default Vue.extend({
   name: 'App',
-
   components: {
     BottomNav,
-    TopToolbar,
-    HelloWorld
+    TopToolbar
   },
-
+  
   data: () => ({
     //
   })
