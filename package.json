@@ -1,0 +1,86 @@
+{
+  "name": "simpleapps-works-frotend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@vue/cli-plugin-typescript": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "typescript": "~3.9.3",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.7",
+    "vue-template-compiler": "^2.6.12",
+    "vuetify": "^2.3.15"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "plugins": [
+      "html",
+      "vue",
+      "prettier",
+      "cypress"
+    ],
+    "extends": [
+      "plugin:vue/essential",
+      "plugin:prettier/recommended",
+      "plugin:cypress/recommended",
+      "eslint:recommended",
+      "@vue/typescript/recommended",
+      "@vue/prettier",
+      "@vue/prettier/@typescript-eslint"
+    ],
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-console": "off",
+      "no-extra-boolean-cast": "off",
+      "no-redeclare": "off",
+      "no-undef": "off",
+      "vars-on-top": "off",
+      "no-var": "off",
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "object-shorthand": "off",
+      "prefer-template": "off",
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "prefer-arrow-callback": "off",
+      "quotes": [
+        "error",
+        "single",
+        {
+          "avoidEscape": true,
+          "allowTemplateLiterals": true
+        }
+      ],
+      "quote-props": [
+        1,
+        "as-needed"
+      ],
+      "newline-per-chained-call": [
+        "warn",
+        {
+          "ignoreChainWithDepth": 3
+        }
+      ],
+      "vue/valid-template-root": "off"
+    }
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.4"
+  }
+}
